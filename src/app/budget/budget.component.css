@@ -1,0 +1,36 @@
+.sidebar {
+  z-index: 1000;
+  position: fixed;
+  left: 50px;
+  width: 50px;
+  height: 100%;
+  margin-left: -50px;
+  overflow-y: auto;
+  background: #000;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color:#000
+}
+
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding-left: 50px;
+}
+
+div.items, div.pallet {
+    background-color:#333333;
+    padding: 5px;
+}
+
+div.persp {
+    background-color:#000;
+    padding: 5px;
+    text-align:center;
+}
+
+div.canvas {
+    background-color:#e5e5e5;
+}

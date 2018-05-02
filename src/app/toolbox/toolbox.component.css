@@ -1,0 +1,15 @@
+ul.sidebar-nav {
+    color:#fff;
+    position: absolute;
+    top: 0;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+    padding-top:5px;
+    list-style: none;
+}
+
+li {
+  text-indent: 5px;
+  line-height: 50px;
+}
