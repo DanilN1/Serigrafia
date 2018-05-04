@@ -1,3 +1,94 @@
-<p>
-  budget-detail works!
-</p>
+<html>
+<head> 
+        <script type="text/javascript">
+function insertText () {
+    var x = document.getElementById('td1');
+}
+        </script>
+        
+        <script>
+function myFunction() {
+    document.getElementById("myTable").deleteRow(4);
+}
+            
+function AddRow() {
+    var row = document.getElementById("rowToClone"); // find row to copy
+    var table = document.getElementById("tableToModify"); // find table to append to
+    var clone = row.cloneNode(true); // copy children too
+    clone.id = "newID"; // change id or other attributes/contents
+    table.appendChild(clone); // add new row to end of table
+}
+</script>
+        <title>Tabla beta</title>
+        <style>
+            body{
+                background:white;
+            }
+            table{ 
+                width: 800px;
+                margin: auto;
+                text-aliggn:center;
+                table-layout:fixed;
+            }
+            table, tr, th, td{
+                padding:20px;
+                color:white;
+                border;1px solid #080808;
+                border-collapse:collapse;
+                font-size:16px;
+                font-family:Arial;
+                background:linear-gradient(top,#3c3c3c 0%, #222222 100%);
+                background:-webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%)
+            }
+            td:hover{
+                background:red;
+            }
+        </style>
+    </head>
+    <body> 
+        <table id="myTable" class = "table">
+            <tr>
+                <th>Cantidad</th>
+                <th>Producto</th>
+                <th>Precio C/U</th>
+                <th>Precio T</th>
+            </tr>
+            <tbody id="tableToModify">
+            <tr id = "rowToClone">
+                
+                <td> <input type="number" id="myNumber" value=""></td>
+                <td> <input type="text" id="myNumber" value=""></td>
+                <td> <input type="number" id="myNumber" value=""></td>
+                <td> <input type="number" id="myNumber" value=""></td>
+            </tr>
+                </tbody>
+            <tr>
+                <td> <input type="number" id="myNumber" value=""></td>
+                <td> <input type="text" id="myNumber" value=""></td>
+                <td> <input type="number" id="myNumber" value=""></td>
+                <td> <input type="number" id="myNumber" value=""></td>
+            </tr>
+            <tr>
+                <td> <input type="number" id="myNumber" value=""></td>
+                <td> <input type="text" id="myNumber" value=""></td>
+                <td> <input type="number" id="myNumber" value=""></td>
+                <td> <input type="number" id="myNumber" value=""></td>
+            </tr>
+            <tr>
+                <td> <input type="number" id="myNumber" value=""></td>
+                <td> <input type="text" id="myNumber" value=""></td>
+                <td> <input type="number" id="myNumber" value=""></td>
+                <td> <input type="number" id="myNumber" value=""></td>
+            </tr>
+        </table>
+        <br>
+    <input type="button" onclick="AddRow()" value="Crear" />
+    <input type="button" onclick="myFunction()" value="Eliminar" />
+        <body>
+            <br>
+            <br>
+            <br>Costo Total<br>
+            <input type="number" id="myNumber" value="Costo Total">
+        </body>
+    </body>
+	</html>
