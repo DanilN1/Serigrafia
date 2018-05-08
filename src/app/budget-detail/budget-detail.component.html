@@ -51,43 +51,23 @@ function AddRow() {
                 <th>Cantidad</th>
                 <th>Producto</th>
                 <th>Precio C/U</th>
-                <th>Precio T</th>
+                <th>Precio Total</th>
             </tr>
             <tbody id="tableToModify">
             <tr id = "rowToClone">
-                
                 <td> <input type="number" id="myNumber" [(ngModel)]="item.quantity"></td>
                 <td>{{item.desc}}</td>
                 <td>{{item.precios[Math.floor(item.quantity/12)]}}</td>
                 <td>{{item.precios[Math.floor(item.quantity/12)]*item.quantity}}</td>
             </tr>
                 </tbody>
-            <tr>
-                <td> <input type="number" id="myNumber" value=""></td>
-                <td> <input type="text" id="myNumber" value=""></td>
-                <td> <input type="number" id="myNumber" value=""></td>
-                <td> <input type="number" id="myNumber" value=""></td>
-            </tr>
-            <tr>
-                <td> <input type="number" id="myNumber" value=""></td>
-                <td> <input type="text" id="myNumber" value=""></td>
-                <td> <input type="number" id="myNumber" value=""></td>
-                <td> <input type="number" id="myNumber" value=""></td>
-            </tr>
-            <tr>
-                <td> <input type="number" id="myNumber" value=""></td>
-                <td> <input type="text" id="myNumber" value=""></td>
-                <td> <input type="number" id="myNumber" value=""></td>
-                <td> <input type="number" id="myNumber" value=""></td>
-            </tr>
+            
         </table>
         <br>
 
         <body>
             <br>
             <br>
-            <br>Costo Total<br>
-            <input type="number" id="myNumber" value="Costo Total">
         </body>
     </body>
 	</html>
