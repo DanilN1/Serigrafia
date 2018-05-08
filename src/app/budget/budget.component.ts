@@ -14,7 +14,7 @@ export class BudgetComponent implements OnInit {
 						png: "assets/images/PlayeraFrente.png",
 						color: "#373435",
 						desc: "Playera",
-						precios: [120,100,80,80,80,80,80,80,80,80,80,80,80],
+						precios: [120,100,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80],
 						quantity: 1,
 						persps: [
 								{
@@ -33,7 +33,7 @@ export class BudgetComponent implements OnInit {
 				},
 				{
 						png: "assets/images/dvd.png",
-						precios: [50,45,35,35,35,35,35,35,35,35,35,35,35,35,35],
+						precios: [50,45,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35],
 						quantity: 1,
 						color: "#373435",
 						desc: "DVD",
