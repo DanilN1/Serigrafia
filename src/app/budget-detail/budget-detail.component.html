@@ -58,8 +58,8 @@ function AddRow() {
                 
                 <td> <input type="number" id="myNumber" [(ngModel)]="item.quantity"></td>
                 <td>{{item.desc}}</td>
-                <td>{{item.precios[Math.floor(item.quantity/30)]}}</td>
-                <td>{{item.precios[Math.floor(item.quantity/30)]*item.quantity}}</td>
+                <td>{{item.precios[Math.floor(item.quantity/12)]}}</td>
+                <td>{{item.precios[Math.floor(item.quantity/12)]*item.quantity}}</td>
             </tr>
                 </tbody>
             <tr>
