@@ -11,6 +11,8 @@ import { PalletComponent } from './pallet/pallet.component';
 import { CanvasComponent } from './canvas/canvas.component';
 import { BudgetComponent } from './budget/budget.component';
 import { BudgetDetailComponent } from './budget-detail/budget-detail.component';
+import { FormsModule } from '@angular/forms';
+import {DragDropModule} from 'primeng/dragdrop';
 
 const appRoutes: Routes = [
     { path: '', component: BudgetComponent },
@@ -33,7 +35,9 @@ const appRoutes: Routes = [
     imports: [
 	BrowserModule,
 	RouterModule.forRoot(appRoutes,{ enableTracing: true } ),
-	BrowserAnimationsModule
+	BrowserAnimationsModule,
+	FormsModule,
+	DragDropModule
     ],
     bootstrap: [AppComponent]
 })

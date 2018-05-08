@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-pallet',
@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pallet.component.css']
 })
 export class PalletComponent implements OnInit {
+		@Output() onColorChange = new EventEmitter<any>();
+		constructor() { }
+		
+		ngOnInit() {
+		}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+		setColor(event){
+				this.onColorChange.emit(event.target.style.backgroundColor);
+		}
 }

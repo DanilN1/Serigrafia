@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-perspectives',
@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./perspectives.component.css']
 })
 export class PerspectivesComponent implements OnInit {
+		@Input() persps: any;
+		@Output() onSelect = new EventEmitter<any>();
+		constructor() { }
 
-  constructor() { }
+		ngOnInit() {
+		}
 
-  ngOnInit() {
-  }
-
+		setPersp(persp){
+				this.onSelect.emit(persp);
+		}
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-canvas',
@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./canvas.component.css']
 })
 export class CanvasComponent implements OnInit {
+		@Input() persp: any;
+		constructor() { }
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+		ngOnInit() {
+		}
+		
 }

@@ -9,27 +9,27 @@
 		    <div class="col-10">
 			<div class="row">
 			    <div class="col-12 items">
-				<app-items></app-items>
+				<app-items [items]="items" (onSelect)="setItem($event)"></app-items>
 			    </div>
 			</div>
 			<div class="row">
 			    <div class="col-12 canvas">
-				<app-canvas></app-canvas>
+				<app-canvas [persp]="persp"></app-canvas>
 			    </div>
 			</div>
 			<div class="row">
 			    <div class="col-12 pallet">
-				<app-pallet></app-pallet>
+				<app-pallet (onColorChange)="setColor($event)"></app-pallet>
 			    </div>
 			</div>
 		    </div>
 		    <div class="col-2 persp">
-			<app-perspectives></app-perspectives>
+			<app-perspectives [persps]="item.persps" (onSelect)="setPersp($event)"></app-perspectives>
 		    </div>
 		</div>
 	    </div>
 	    <div class="col-5">
-		<app-budget-detail></app-budget-detail>
+		<app-budget-detail [item]="item"></app-budget-detail>
 	    </div>
 	</div>
     </div>

@@ -1,4 +1,1 @@
-<img src = "assets/images/PlayeraFrente.png" class="border item rounded" alt = "playera">
-<img src = "assets/images/dvd.png" class="border item rounded" alt = "dvd">
-<img src = "assets/images/Reconocimiento.png" class="border item rounded" alt = "recon">
-<img src = "assets/images/Taza.png" class="border item rounded" alt = "taza">
+<img *ngFor="let item of items" [src]="item.png" class="border item rounded" (click)="selectItem(item)">

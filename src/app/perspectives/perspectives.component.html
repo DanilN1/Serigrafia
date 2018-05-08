@@ -1,3 +1,1 @@
-<img src = "assets/images/PlayeraFrente.png" class="border presp rounded" alt = "frente">
-<img src = "assets/images/PlayeraAtras.png" class="border presp rounded" alt = "atras" >
-<img src = "assets/images/PlayeraLado.png" class="border presp rounded" alt = "lado">
+<img *ngFor="let persp of persps" [src]="persp.png" (click)="setPersp(persp)" class="border presp rounded">
